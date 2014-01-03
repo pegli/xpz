@@ -1,0 +1,7 @@
+build
+classes
+data
+.*
+*.bndl
+*.jar
+*.lst

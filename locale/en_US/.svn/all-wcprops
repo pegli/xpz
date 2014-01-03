@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/locale/en_US
+END
+default_en_US_gray.rdb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/locale/en_US/default_en_US_gray.rdb
+END
+default_en_US_color.rdb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/locale/en_US/default_en_US_color.rdb
+END
+Crossword.rsrc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/locale/en_US/Crossword.rsrc
+END

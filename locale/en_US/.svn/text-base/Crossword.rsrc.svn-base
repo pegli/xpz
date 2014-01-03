@@ -1,0 +1,174 @@
+# -*- coding: utf-8 -*-
+
+# Copyright 2001-2003, Danger, Inc.  All Rights Reserved.
+# This file is subject to the Danger, Inc. Sample Code License,
+# which is provided in the file SAMPLE_CODE_LICENSE.
+# Copies are also available from http://developer.danger.com/
+
+package "com.obscure.xword"
+
+interface "../../src/com/obscure/xword/Resources.java"
+events "../../src/com/obscure/xword/Commands.java"
+
+
+#---------------------------------------------------------------------
+# Application Name
+#---------------------------------------------------------------------
+string ID_APP_NAME "Crossword"
+
+#---------------------------------------------------------------------
+# Class ID
+#---------------------------------------------------------------------
+string ID_APP_CLASS "com.obscure.xword.CrosswordApp"
+
+#---------------------------------------------------------------------
+# Large Icon  (32x32)
+#---------------------------------------------------------------------
+bitmap ID_LARGE_ICON "{base}LargeIcon.png"
+
+#---------------------------------------------------------------------
+# Small Icon (16x16)
+#---------------------------------------------------------------------
+bitmap ID_SMALL_ICON "{base}SmallIcon.png"
+
+#---------------------------------------------------------------------
+# Splash Screen (148(h)x136(v))
+#---------------------------------------------------------------------
+bitmap ID_SPLASH_SCREEN "{base}SplashScreen.png"
+
+#---------------------------------------------------------------------
+# Strings
+#---------------------------------------------------------------------
+string	kStrTitle	"Crossword"
+string  ID_PUZZLE_SOLVED		"Puzzle is solved!"
+string  ID_PUZZLE_NOT_SOLVED	"Puzzle is not solved"
+string	ID_LOADING_PUZZLE		"Loading puzzle..."
+string	ID_ADD_NEW_CROSSWORD_STR	"[Add new crossword]"
+
+#---------------------------------------------------------------------
+# I18N Locale String
+#---------------------------------------------------------------------
+string ID_LOCALE    "en_US"
+
+#---------------------------------------------------------------------
+# events
+#---------------------------------------------------------------------
+event EVENT_PUZZLE_LOADED
+event EVENT_SELECT_PUZZLE_CANCEL
+event EVENT_LOAD_PUZZLE_CANCEL
+event EVENT_ADD_PUZZLE_CANCEL
+
+#---------------------------------------------------------------------
+# menus
+#---------------------------------------------------------------------
+menu ID_CROSSWORD_SCREEN_MENU
+	menuItem
+		title = "Select Puzzle"
+		event = EVENT_SELECT_CROSSWORD
+	menuItem
+		title = "Peek"
+		event = EVENT_PEEK
+	menuItem
+		title = "Check Solution"
+		event = EVENT_CHECK_SOLUTION
+	divider
+	menuItem
+		title = "About"
+		event = EVENT_SHOW_ABOUT
+		
+endMenu
+
+
+#---------------------------------------------------------------------
+# screens
+#---------------------------------------------------------------------
+screen ID_CROSSWORD_SCREEN
+	title = "Crossword"
+    className = "com.obscure.xword.CrosswordScreen"
+    actionMenu = ID_CROSSWORD_SCREEN_MENU
+
+	scrollView
+		id = ID_PUZZLE_SCROLLVIEW
+		className = "com.obscure.xword.PuzzleScrollView"
+		top = 0
+		left = 0
+       	widthPct = 100
+       	heightPct = 100
+
+    endScrollView
+        
+endScreen
+
+screen ID_SELECT_CROSSWORD_SCREEN
+	title = "Select Crossword"
+	className = "com.obscure.xword.SelectCrosswordScreen"
+	
+	staticTextBox
+		id = ID_SELECT_CROSSWORD_TEXTBOX
+		text = "Opening a new crossword will clear your current puzzle."
+		doesNotHaveBorder
+		top = 0
+		left = 0
+		widthPct = 100
+		heightPct = 20
+	
+	view
+		id = ID_SELECT_CROSSWORD_LISTVIEW
+		title = "Select a new puzzle:"
+		className = "com.obscure.xword.CrosswordURLListView"
+		widthPct = 100
+		heightPct = 80
+		positionBelow = ID_SELECT_CROSSWORD_TEXTBOX : 4
+		initialFocus
+	
+endScreen
+
+
+
+dialog ID_ABOUT_DIALOG
+    title = "About Crossword"
+    doneEvent = EVENT_DISMISS_ABOUT_DIALOG
+ 		
+    staticTextBox
+        center
+        widthPct = 100
+        doesNotHaveBorder
+        text = "Crossword\nby Paul Mietz Egli\nhttp://www.obscure.com/hiptop/"
+ 
+endDialog
+
+
+dialog ID_ADD_NEW_PUZZLE_DIALOG	
+	title = "Add new puzzle"
+	doneEvent = EVENT_ADD_PUZZLE_DONE
+	showCancel
+	
+	staticText
+		id = ID_PUZZLE_NAME_LABEL
+		text = "Name:"
+		top = 4
+		right = 30
+		justifyRight
+	
+	textField
+		id = ID_PUZZLE_NAME_TEXTFIELD
+		justifyLeft
+		width = 100
+		positionToRight = ID_PUZZLE_NAME_LABEL : 3
+		matchHeight = ID_PUZZLE_NAME_LABEL
+		initialFocus
+		
+	staticText
+		id = ID_PUZZLE_URL_LABEL
+		text = "URL:"
+		positionBelow = ID_PUZZLE_NAME_LABEL : 15
+		alignRight = ID_PUZZLE_NAME_LABEL
+	
+	textField
+		id = ID_PUZZLE_URL_TEXTFIELD
+		justifyLeft
+		width = 100
+		positionToRight = ID_PUZZLE_URL_LABEL : 3
+		matchHeight = ID_PUZZLE_URL_LABEL
+		
+endDialog	

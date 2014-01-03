@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword
+END
+CrosswordScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/CrosswordScreen.java
+END
+BlackCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/BlackCell.java
+END
+Cell.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/Cell.java
+END
+AbstractPuzzle.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/AbstractPuzzle.java
+END
+Puzzle.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/Puzzle.java
+END
+CellWidget.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/CellWidget.java
+END
+PUZPuzzle.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/PUZPuzzle.java
+END
+Commands.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/Commands.java
+END
+Resources.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/Resources.java
+END
+CrosswordApp.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/CrosswordApp.java
+END
+PuzzleScrollView.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/PuzzleScrollView.java
+END
+SelectCrosswordScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/SelectCrosswordScreen.java
+END
+CrosswordURLListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/CrosswordURLListView.java
+END
+CrosswordURLListItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/software/!svn/ver/4/hiptop/crossword/trunk/src/com/obscure/xword/CrosswordURLListItem.java
+END

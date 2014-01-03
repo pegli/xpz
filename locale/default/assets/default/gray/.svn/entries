@@ -1,0 +1,54 @@
+8
+
+dir
+4
+http://svn.obscure.com/svn/software/hiptop/crossword/trunk/locale/default/assets/default/gray
+http://svn.obscure.com/svn/software
+
+
+
+2008-01-02T19:10:18.530921Z
+4
+paul
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+16c52e69-6711-401e-b8c3-7b819ec433d5
+
+LargeIcon.png
+file
+
+
+
+
+2008-01-02T17:22:21.000000Z
+cc4eb421de7887d50aa1042140c983fc
+2008-01-02T19:10:18.530921Z
+4
+paul
+has-props
+
+SmallIcon.png
+file
+
+
+
+
+2008-01-02T17:22:21.000000Z
+5fe078cbcb887ebd17b0ff4abea0e29f
+2008-01-02T19:10:18.530921Z
+4
+paul
+has-props
+

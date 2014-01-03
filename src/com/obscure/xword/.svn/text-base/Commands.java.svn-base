@@ -1,0 +1,17 @@
+/* this file is auto-generated */
+
+package com.obscure.xword;
+
+public interface Commands
+{
+	int EVENT_SHOW_ABOUT = 32769;
+	int EVENT_PUZZLE_LOADED = 32770;
+	int EVENT_SELECT_CROSSWORD = 32772;
+	int EVENT_PEEK = 32774;
+	int EVENT_CHECK_SOLUTION = 32775;
+	int EVENT_SELECT_PUZZLE_CANCEL = 32777;
+	int EVENT_LOAD_PUZZLE_CANCEL = 32778;
+	int EVENT_DISMISS_ABOUT_DIALOG = 32779;
+	int EVENT_ADD_PUZZLE_CANCEL = 32781;
+	int EVENT_ADD_PUZZLE_DONE = 32783;
+}
